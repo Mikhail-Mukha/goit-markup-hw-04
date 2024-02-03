@@ -60,6 +60,7 @@ header .container {
     display: flex;
     align-items: center;
     width: 1158px;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-nav-logo {
@@ -99,6 +100,20 @@ header .container {
     text-decoration: none;
     padding: 24px 0;
     display: block;
+    position: relative;
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-nav-link::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
 }
 
 .header-nav-link:hover, 
@@ -121,6 +136,7 @@ header .container {
     font-style: normal;
     padding-top: 25.5px;
     padding-bottom: 25.5px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-address-list{
@@ -166,10 +182,6 @@ header .container {
     margin: 0 auto;
     width: 100%;
     max-width: 496px;
-}
-
-.effective-solutions {
-    
 }
 
 .button {
@@ -330,9 +342,6 @@ header .container {
 .our-portfolio-item:hover,
 .our-portfolio-item:focus {
     transform: translateY(0%);
-}
-
-.our-portfolio-item:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
@@ -344,8 +353,8 @@ header .container {
 }
 
 .our-portfolio-wrap {
-    position: relative;
     overflow: hidden;
+    position: relative;
 }
 
 .our-portfolio-context {
