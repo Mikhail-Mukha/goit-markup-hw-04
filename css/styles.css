@@ -51,12 +51,12 @@ img {
     padding-right: 15px;
 }
 
-.header {
+header {
     background: #FFFFFF;
     border-bottom: 1px solid #E7E9FC;
 }
 
-.header .container {
+header .container {
     display: flex;
     align-items: center;
     width: 1158px;
@@ -283,11 +283,8 @@ img {
     letter-spacing: 0.02em;
 }
 
-.our-team-container{
-    fill: var(--IRIS, #4D5AE5);
-}
-
 .our-team-icon-list {
+    background-color:  #4D5AE5;
     display: flex;
     gap: 24px;
     justify-content: center;
